@@ -20,70 +20,200 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+    <!-- Modal 1 -->
+    <div class="modal fade" id="Excercise1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <a name="top1">&nbsp</a>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Memory Test</h4>
+                </div>
+                <p class="task-desc">Your task is to read text and memorize it to answer questions after reading.</p>
+                <div class="modal-body">
+                    <div id="task1">
+                        <h2 id="task1title"></h2>
+                        <h3 id="task1author"></h3>
+                        <div id="task1text"></div>
+                    </div>
+                    <div id="task1footer">
+                        <div id="task1q1">
+                            <h3 id="t1q1t"></h3>
+                            <input type="radio" name="t1q1" value="1"><span id="t1q1a1"></span></br>
+                            <input type="radio" name="t1q1" value="2"><span id="t1q1a2"></span></br>
+                            <input type="radio" name="t1q1" value="3"><span id="t1q1a3"></span></br>
+                        </div>
+                        <div id="task1q2">
+                            <h3 id="t1q2t"></h3>
+                            <input type="radio" name="t1q2" value="1"><span id="t1q2a1"></span></br>
+                            <input type="radio" name="t1q2" value="2"><span id="t1q2a2"></span></br>
+                            <input type="radio" name="t1q2" value="3"><span id="t1q2a3"></span></br>
+                        </div>
+                        <div id="task1q3">
+                            <h3 id="t1q3t"></h3>
+                            <input type="radio" name="t1q3" value="1"><span id="t1q3a1"></span></br>
+                            <input type="radio" name="t1q3" value="2"><span id="t1q3a2"></span></br>
+                            <input type="radio" name="t1q3" value="3"><span id="t1q3a3"></span></br>
+                        </div>
+                        <div id="task1q4">
+                            <h3 id="t1q4t"></h3>
+                            <input type="radio" name="t1q4" value="1"><span id="t1q4a1"></span></br>
+                            <input type="radio" name="t1q4" value="2"><span id="t1q4a2"></span></br>
+                            <input type="radio" name="t1q4" value="3"><span id="t1q4a3"></span></br>
+                        </div>
+                        <div id="task1q5">
+                            <h3 id="t1q5t"></h3>
+                            <input type="radio" name="t1q5" value="1"><span id="t1q5a1"></span></br>
+                            <input type="radio" name="t1q5" value="2"><span id="t1q5a2"></span></br>
+                            <input type="radio" name="t1q5" value="3"><span id="t1q5a3"></span></br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" id="task1submit">Submit</button>
+                        </div>
+                    </div>
+                    <div id="task1results">
+                        <p>Your result is:</p>
+                        <span id="task1res"></span></br>
+                        <p id="task1resDesc">GREAT</p>
+                    </div>
+                </div>
+                <div href="#top1" class="btn btn-success btn-lg center-block" id="task1start">Start Task</div>
+
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+    </div>
+        <!-- Modal 2-->
+    <div id="Excercise2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Strategical Reading</h4>
+                </div>
+                <p class="task-desc">Your task is to read text as fast as you can and memorize significant information.</p>
+                <div class="modal-body">
+                    <div id="task2p1">
+
+                    </div>
+                    <div id="task2p2">
+                        <span id="task2q1t"></span>
+                        <input type="text" id="task2in1">
+                        <span id="task2q2t"></span>
+                        <input type="text" id="task2in2">
+                        <span id="task2q3t"></span>
+                        <input type="text" id="task2in3">
+                        <span id="task2q4t"></span>
+                        <input type="text" id="task2in4">
+                        <span id="task2q5t"></span>
+                        <input type="text" id="task2in5">
+                        <span id="task2q6t"></span>
+                    </div>
+                    </br>
+                    <div id="task2results">
+                        <p>Your result is:</p>
+                        <span id="task2res"></span></br>
+                        <p id="task2resDesc">GREAT</p>
+                    </div>
+                    <div id="task2start" class="btn btn-md btn-success center-block">Start</div>
+                </div>
+                <div class="modal-footer" id="task2footer">
+                    <button type="button" class="btn btn-default" id="task2submit">Submit</button>
+                </div>
             </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
+
+        </div>
+    </div>
+    <!-- Modal 3-->
+    <div id="Excercise3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Word Memorising</h4>
+                </div>
+                <p class="task-desc">Your task is to identify word which is shown more than once.</p>
+                <div class="modal-body">
+                    <div id="task3part">
+                        <h2 id="task3word"></h2></br>
+                        <div class="btn btn-sm btn-success" id="task3n">Not mentioned</div>
+                        <div class="btn btn-sm btn-success" id="task3y">Mentioned</div>
+                    </div>
+                    <div id="task3res">
+                        <p>Your result is:</p>
+                        <span id="task3result"></span></br>
+                        <p id="task3resDesc">GREAT</p>
+                    </div>
+                </div>
+                <div class="modal-footer" id="task3footer">
+                </div>
             </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+        </div>
+    </div>
+    <!-- Modal 4-->
+    <div id="Excercise4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Schulte Tabe</h4>
+                </div>
+                <p class="task-desc">Your task is to click all numbers in ascending order. You must focus your sight to table center.</p>
+                <div class="modal-body">
+                    <table id="task4table" class="table table-bordered">
+                    </table>
+                    <div id="task4result"></div>
+                </div>
+                <div class="modal-footer" id="task4footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 5-->
+    <div id="Excercise5" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <a name="top5">&nbsp</a>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Final Test - Test On Speed</h4>
+                </div>
+                <p class="task-desc">Your task is to read text as fast as you can.</p>
+
+                <div class="modal-body">
+                    <div class="btn btn-lg btn-success" id="task5start">Start reading!</div>
+                    <div id="task5task">
+                        <div id="task5text">
+                        </div>
+                        <a href="#top5" class="btn btn-lg btn-success" id="task5stop">Stop reading!</a>
+                    </div>
+                    <div id="task5res">
+                    </div>
+                </div>
+                <div class="modal-footer" id="task5footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <h1>S.Reading</h1>
+        <p>Five steps to read fast.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#Excercise1" id="task1toggle">Step One</a></p>
+        <p><a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#Excercise2" id="task2toggle">Step Two</a></p>
+        <p><a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#Excercise3" id="task3toggle">Step Three</a></p>
+        <p><a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#Excercise4" id="task4toggle">Step Four</a></p>
+        <p><a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#Excercise5" id="task5toggle">Step Five</a></p>
       </div>
     </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2015</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
+        <script src="js/repo.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
